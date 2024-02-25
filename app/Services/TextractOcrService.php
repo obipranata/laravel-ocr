@@ -114,8 +114,7 @@ class TextractOcrService
                             'pekerjaan' => str_replace(':', '',$pekerjaan),
                             'kewarganegaraan' => str_replace(':', '',$kewarganegaraan),
                         ],
-                'status' => 'success',
-                'block' => $block
+                'status' => 'success'
             ];
         }catch(\Exception $e){
             return ['status' => 'error', 'message' => $e->getMessage()];
