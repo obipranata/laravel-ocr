@@ -31,4 +31,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'aws' => [
+        'key' => env('TEXTRACT_ACCESS_KEY_ID'),
+        'secret' => env('TEXTRACT_SECRET_ACCESS_KEY'),
+        'region' => env('TEXTRACT_DEFAULT_REGION', 'us-east-1'),
+    ],
+
 ];
