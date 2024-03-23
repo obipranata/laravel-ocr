@@ -21,7 +21,7 @@ class TextractOcrService
             'Document' => [
                 'Bytes' => file_get_contents(storage_path('app/'.$file)),
             ],
-            'FeatureTypes' => ['FORMS', 'TABLES']
+            'FeatureTypes' => ['FORMS']
         ]);
         foreach ($result->get('Blocks') as $block) {
             if ($block['BlockType'] === 'LINE'){
